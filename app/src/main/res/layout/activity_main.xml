@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:backgroundTint="@color/cyua"
+            app:fabAlignmentMode="end"
+            app:fabCradleMargin="20dp"
+            app:fabCradleRoundedCornerRadius="20dp"
+            app:fabCradleVerticalOffset="10dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="269dp"
+                android:layout_height="53dp"
+                android:background="@android:color/transparent"
+                app:itemIconSize="26dp"
+                app:labelVisibilityMode="unlabeled"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:menu="@menu/bottom_nav_view" />
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/orange"
+            app:layout_anchor="@id/bottomAppbar"
+            app:tint="@color/white" />
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="375dp"
+        android:layout_height="505dp"
+        android:backgroundTint="#ffeeea"
+        app:cardCornerRadius="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintVertical_bias="0.07999998">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="@string/r212"
+            android:textSize="36dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginVertical="140dp"
+            android:layout_marginHorizontal="135dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="@string/score"
+            android:textSize="15dp"
+            android:textColor="#c2b8b4"
+            android:textAlignment="center"
+            android:layout_marginVertical="200dp"
+            android:layout_marginHorizontal="135dp"/>
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:layout_margin="25dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/fsd"
+            android:textColor="@color/black"
+            android:textSize="26dp" />
+
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="225dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-74dp"
+            android:background="@drawable/circle" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/pepesa"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginHorizontal="107dp"
+            android:layout_marginVertical="100dp"
+            app:cpb_background_progressbar_color="#fedad4"
+            app:cpb_progressbar_color="#f26844" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-140dp"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="29dp"
+                android:layout_marginVertical="25.2dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/as"
+                android:textColor="@color/black"
+                android:textSize="26.5dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="65.5dp"
+                android:text="@string/asrd"
+                android:textColor="#b7697a"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="29dp"
+                android:layout_marginVertical="108dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/re"
+                android:textColor="@color/black"
+                android:textSize="26.5dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="33dp"
+                android:layout_marginVertical="145dp"
+                android:text="@string/sad"
+                android:textColor="#cda889"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="200dp"
+                android:layout_marginVertical="67.5dp"
+                android:text="@string/a123"
+                android:textColor="#cda889"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="200dp"
+                android:layout_marginVertical="27dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/awre"
+                android:textColor="@color/black"
+                android:textSize="26.5dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="200dp"
+                android:layout_marginVertical="104.7dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/bbess"
+                android:textColor="@color/black"
+                android:textSize="26.5dp" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="201dp"
+                android:layout_marginVertical="142dp"
+                android:text="@string/ttutur"
+                android:textColor="#87878f"
+                android:textSize="12dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="41dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/serae3eqa"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:layout_width="202dp"
+        android:layout_height="21dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/tvs"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="14dp"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        android:layout_width="202dp"
+        android:layout_height="21dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#929292"
+        android:textSize="9dp"
+        android:text="@string/sxa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
